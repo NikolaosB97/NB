@@ -1,0 +1,106 @@
+*{
+  
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+
+.header-custom {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+.logo-small {
+  max-width: 50%; /* la larghezza massima dell'immagine */
+  width: auto; /* per mantenere le proporzioni dell'immagine */
+  height: auto; /* per mantenere le proporzioni dell'immagine */
+}
+
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
+
+.margin-custom{
+    margin-top: 50px;
+}
+.container-icon{
+    height: 200px;
+}
+
+
+#about {
+  background-color: #0f0f0f; /* Sfondo scuro per un passaggio fluido dall'header */
+  color: #8f8f8f; /* Testo in grigio chiaro per leggibilità senza essere troppo invasivo */
+  padding: 50px 0; /* Imbottitura sopra e sotto per spazio */
+}
+
+#about h2 {
+  color: #ffffff; /* Titolo bianco per risaltare */
+  margin-bottom: 25px;
+}
+
+#about p {
+  color: #cfcfcf; /* Paragrafi in un grigio un po' più chiaro per leggibilità */
+  font-size: 18px; /* Dimensione del testo leggibile */
+}
+
+
+
+/* Aggiunta di un po' di responsività */
+@media (max-width: 768px) {
+  #about {
+    padding: 30px 0;
+  }
+
+  #about h2 {
+    font-size: 24px; /* Più piccolo su dispositivi più piccoli */
+  }
+
+  #about p {
+    font-size: 16px; /* Più piccolo su dispositivi più piccoli */
+  }
+}
+
+/* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  
+  
